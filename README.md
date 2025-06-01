@@ -46,6 +46,26 @@ Then visit: http://localhost:3000/quote
 - Automatically runs `npm install` and `npm test` on every push and pull request.
 - Workflow is defined in `.github/workflows/ci.yml`.
 
+## 🐳 Docker + Nginx (Project 2 Upgrade)
+
+This project is also configured to run in Docker, with an Nginx reverse proxy in front of the Node.js app — simulating a basic production environment.
+
+### Run with Docker Compose
+
+```bash
+docker compose up --build
+```
+
+- Access the app at: http://localhost/quote  
+- Nginx listens on port 80 and forwards traffic to the Node.js app on port 3000
+
+### Key Files
+
+- `Dockerfile` – Builds the Node.js app container  
+- `docker-compose.yml` – Runs app + Nginx as services  
+- `nginx/default.conf` – Nginx reverse proxy config  
+- `.dockerignore` – Excludes unnecessary files from image
+
 ## 🌐 Live Demo (Optional)
 
 Visit: https://ci-cd-node-app-dr9i.onrender.com 
