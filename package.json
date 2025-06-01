@@ -1,0 +1,23 @@
+{
+  "name": "ci-cd-node-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js app with a working CI/CD pipeline using GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkalsi95/ci-cd-node-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkalsi95/ci-cd-node-app/issues"
+  },
+  "homepage": "https://github.com/mkalsi95/ci-cd-node-app#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
